@@ -1,0 +1,26 @@
+{
+  "name": "d3-web-app",
+  "version": "1.0.0",
+  "description": "web app that creates D3 Visualizations based on user input",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "d3": "^4.10.2",
+    "express": "^4.15.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philipbankier/d3-web-app.git"
+  },
+  "author": "Philip Bankier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/philipbankier/d3-web-app/issues"
+  },
+  "homepage": "https://github.com/philipbankier/d3-web-app#readme"
+}
