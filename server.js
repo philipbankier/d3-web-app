@@ -16,6 +16,8 @@ res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Ty
 next();
 });
 
+app.use(express.static(__dirname + '/staticFiles'));
+
 // ROUTES 
 app.get('/', function(req, res) {
   console.log(req.body);
