@@ -1,6 +1,13 @@
- body {
-    font: 20px Montserrat, sans-serif;
-    line-height: 1.8;
+html {
+  height: 100%;
+}
+body {
+  font: 20px Montserrat, sans-serif;
+  line-height: 1.8;
+  background: #161614;
+  height: inherit;
+  margin: 0;
+  padding: 0;
 }
 p {font-size: 16px;}
 .margin {margin-bottom: 45px;}
@@ -17,7 +24,7 @@ p {font-size: 16px;}
     color: #1abc9c !important;
 }
 .bg-1 { 
-    background-color: #1abc9c; /* Green */
+    background-color: #0072BB; /* Blue */
     color: #ffffff;
 }
 .bg-2 { 
@@ -32,10 +39,24 @@ p {font-size: 16px;}
     background-color: #ffffff; /* White */
 }
 .bg-5 { 
-    background-color: #DCDCDC; /* Light Gray */
+    background-color: #C6C8CA; /* Light Gray */
 }
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
 }
 
+/*D3*/
+.map {
+  height: 100%;
+}
+
+.water {
+    fill: none;
+}
+
+.land {
+  fill: #FF4C3B;
+  stroke: #000000;
+  stroke-width: 0.5px;
+}

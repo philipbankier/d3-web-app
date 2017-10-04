@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/2.2.0/topojson.min.js"></script>
   </head> 
 
   <body>
@@ -31,44 +33,32 @@
 
       <!-- FORM DIV -->
       <div class="col-sm-6 col-sm-offset-3 text-center container bg-2">
-
         <!-- FORM -->              <!-- action = the url where we want to POST -->
         <form name="myForm" id="myForm" action="http://localhost:5000/users" method="POST">
 
-            <!-- NAME -->
-            <div id="name-group" class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" name="name" placeholder="boom">
-            </div>
+          <!-- NAME -->
+          <div id="date-group" class="form-group">
+              <label for="date"> Date </label>
+              <input type="text" class="form-control" name="date" placeholder="2017">
+          </div>
 
-            <!-- EMAIL -->
-            <div id="email-group" class="form-group">
-                <label for="email">Email</label>
-                <input type="text" class="form-control" name="email" placeholder="boom@baby">
-            </div>
+          <!-- EMAIL -->
+          <div id="country-group" class="form-group">
+              <label for="country">Country</label>
+              <input type="text" class="form-control" name="country" placeholder="Yemen">
+          </div>
 
-            <button id="submit-button" class="btn btn-success">Submit <span class="fa fa-arrow-right"></span></button>
+          <button id="submit-button" class="btn btn-success">Submit <span class="fa fa-arrow-right"></span></button>
         </form>
       </div>
     </div>
 
     <!-- SECOND CONTAINER  -->
-    <div class="container-fluid bg-4 text-center">    
-      <h3 class="margin">D3 Visualization</h3><br>
-
-      <!-- D3 visualization occurs in iframe -->
-      <iframe src="frames/simple.html" sandbox="allow-popups allow-scripts allow-forms allow-same-origin" marginwidth="0" marginheight="0" style="height:500px;" scrolling="no"></iframe>
-      <!DOCTYPE html>
-      <html>
-        <head>
-        </head>
-        <body>
-        </body>
-      </html>
-    </div>
+    <div class="map"></div>
+    <script type="text/javascript" src="map.js"></script>
 
     <!-- FOOTER -->
-    <footer class="container-fluid bg-3 text-center">
+    <footer class="container-fluid bg-4 text-center">
       <p>D3 Web App</p> 
     </footer>
   </body>
