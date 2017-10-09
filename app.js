@@ -5,6 +5,9 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
+// set the view engine to ejs
+app.set('view engine', 'ejs')
+
 // add middleware 
 app.use(function(req, res, next) {
 
@@ -19,10 +22,13 @@ next();
 app.use(express.static(__dirname + '/staticFiles'));
 
 // ROUTES 
-app.get('/', function(req, res) {
-  console.log(req.body);
-  res.send(req.body);
-});
+
+// - Home page
+app.get('/', (req, res) => {
+
+  // render `home.ejs` with the list of posts
+  res.render('home')
+})
 
 app.post('/users', function(req, res) {
   console.log(req.body); 

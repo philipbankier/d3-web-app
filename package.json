@@ -2,11 +2,12 @@
   "name": "d3-web-app",
   "version": "1.0.0",
   "description": "web app that creates D3 Visualizations based on user input",
-  "main": "server.js",
+  "main": "app.js",
   "dependencies": {
     "body-parser": "^1.18.1",
     "d3": "^4.10.2",
     "datamaps": "^0.5.8",
+    "ejs": "^2.5.7",
     "express": "^4.15.4",
     "nodemon": "^1.12.1",
     "topojson": "^3.0.2"
@@ -14,7 +15,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
